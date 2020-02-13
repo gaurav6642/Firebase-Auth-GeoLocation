@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "866740653573",
+    "firebase_url": "https://gaurav-df5e7.firebaseio.com",
+    "project_id": "gaurav-df5e7",
+    "storage_bucket": "gaurav-df5e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866740653573:android:53f3fc28bf8a687916566c",
+        "android_client_info": {
+          "package_name": "com.e.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866740653573-10bg5s8gciu0951pevd1h35lonsn84a8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.firebaselogin",
+            "certificate_hash": "b48159cfc8d5f581a046010923524e826d12964d"
+          }
+        },
+        {
+          "client_id": "866740653573-4cvdn5g5b1lbvrcd9l8oq8moho2bu72n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.firebaselogin",
+            "certificate_hash": "4841266cd04ae4039b8528ec4d1ad4a6cb17e2a0"
+          }
+        },
+        {
+          "client_id": "866740653573-lgppngq85c8tf98hnpth5l57bri503mr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWOgni6WukwrM4lIoRepaBIIEd9XxLFTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866740653573-lgppngq85c8tf98hnpth5l57bri503mr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

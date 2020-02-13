@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3b4b6"
+    android:orientation="vertical"
+    tools:context=".getOtp">
+
+    <LinearLayout
+        android:layout_above="@+id/signIn"
+        android:layout_width="match_parent"
+        android:id="@+id/ll"
+        android:background="#b3b4b6"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_key"/>
+
+        <EditText
+            android:gravity="center"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:maxEms="10"
+            android:maxLength="10"
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter OTP"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#201b17"
+        android:text="Confirm"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#fcfbfa"
+        android:id="@+id/signIn"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:background="#f8a306"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/parentLogin"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/upperLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="#f8a306"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="BikeWards"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_bold"
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#201b17"/>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/logoImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_onlinelogomaker_091619_1359_0907"/>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@+id/userTypes"
+            android:visibility="visible"
+            android:background="#fcfbfa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/login_frame">
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/ll1"
+                android:background="#fcfbfa"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_smartphone_1"/>
+
+                <EditText
+                    android:maxEms="10"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="#fcfbfa"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:id="@+id/phoneNumber"
+                    android:hint="Enter Mobile No."/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/underline"
+                android:visibility="gone"
+                android:layout_below="@+id/ll1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#201b17"/>
+
+            <TextView
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#fcfbfa"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/button_background"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:text="Login with Phone Number"
+                android:id="@+id/phoneLoginBtn"
+                />
+
+
+            <TextView
+
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#fcfbfa"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/button_background"
+                android:textSize="16sp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_icons8_google"
+                android:drawablePadding="5dp"
+                android:layout_width="240dp"
+                android:id="@+id/googleButton"
+                android:layout_height="40dp"
+                android:text="Continue with Google"/>
+            <TextView
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#fcfbfa"
+                android:paddingLeft="10dp"
+                android:background="@drawable/button_background"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_facebook_1"
+                android:id="@+id/facebook"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:text="Continue with Facebook"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<EditText
+        android:layout_width="150dp"
+        android:inputType="phone"
+        android:layout_height="50dp"
+        android:id="@+id/phoneNumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/continue_btn"/>
+    <Button
+        android:text="Google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleButton"/>
+    <com.facebook.login.widget.DeviceLoginButton
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:layout_width="40dp"
+        android:paddingLeft="200dp"
+        android:background="@drawable/ic_facebook"
+        android:foreground="@drawable/ic_facebook"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/facebookButton"/>-->
+
+    <TextView
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#201b17"
+        android:text="Login"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#fcfbfa"
+        android:id="@+id/continue_btn"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
